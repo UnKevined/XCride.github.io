@@ -108,7 +108,7 @@ nav ul li a:hover {
 }
 
 .background-image:nth-child(2) {
-  top: 25%; /* Anpassen des Abstands zwischen den Bildern */
+  top: 50%; /* Anpassen des Abstands zwischen den Bildern */
 }
 
 .background-image:nth-child(3) {
