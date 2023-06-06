@@ -95,7 +95,7 @@ nav ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 25%; /* Anpassen der Höhe für jedes Bild */
+  height: 60%; /* Anpassen der Höhe für jedes Bild */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
