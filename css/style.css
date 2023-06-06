@@ -1,4 +1,3 @@
-
 /* Allgemeine Stile */
 body {
   font-family: Arial, sans-serif;
@@ -38,19 +37,18 @@ nav ul li a:hover {
 /* Hintergrundbilder */
 .background {
   width: 100%;
-  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 400vh; /* Adjust the height as needed */
 }
 
 .background-image {
   flex: 1;
-  min-height: 100vh; /* Stellt sicher, dass das Bild mindestens die volle Höhe hat */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,3 +78,45 @@ nav ul li a:hover {
   height: auto;
   margin-top: 20px;
 }
+
+/* Hintergrundbilder (vertikal angeordnet) */
+.background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%; /* Anpassen der Höhe für jedes Bild */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.background-image:nth-child(1) {
+  top: 0;
+}
+
+.background-image:nth-child(2) {
+  top: 25%; /* Anpassen des Abstands zwischen den Bildern */
+}
+
+.background-image:nth-child(3) {
+  top: 50%; /* Anpassen des Abstands zwischen den Bildern */
+}
+
+.background-image:nth-child(4) {
+  top: 75%; /* Anpassen des Abstands zwischen den Bildern */
+}
+
+*/
