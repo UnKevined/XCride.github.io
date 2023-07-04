@@ -35,10 +35,10 @@ $(document).ready(function() {
     var name = $('#name').val();
     var comment = $('#comment').val();
 
-    // Füge den Kommentar der Liste hinzu
+    // Add the comment to the list
     $('#comment-list').append('<li><strong>' + name + ':</strong> ' + comment + '</li>');
 
-    // Zurücksetzen der Formularfelder
+    // Reset the form fields
     $('#name').val('');
     $('#comment').val('');
   });
@@ -60,5 +60,3 @@ $(document).ready(function() {
     }
   });
 });
-
-
