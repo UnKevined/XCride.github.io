@@ -1,6 +1,6 @@
 /* Allgemeine Stile */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -11,12 +11,15 @@ body {
 nav {
   background-color: #333;
   color: #fff;
+  text-align: center;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
@@ -117,4 +120,12 @@ nav ul li a:hover {
 
 .background-image:nth-child(4) {
   top: 75%; /* Anpassen des Abstands zwischen den Bildern */
+} 
+
+/* Titel der Webseite */
+h1.title {
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
 }
