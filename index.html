@@ -1,45 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>My Website</title>
-  <link rel='stylesheet' type='text/css' href='css/style.css'>
-  <script src='js/script.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathrins Cycling Webseite</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background">
-        <div class="background-image active" style="background-image: url('images/background1.JPG');"></div>
-        <div class="background-image active" style="background-image: url('images/background2.JPG');"></div>
-        <div class="background-image active" style="background-image: url('images/background3.JPG');"></div>
-        <div class="background-image active" style="background-image: url('images/background4.JPG');"></div>
-    </div>
-      
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  
-    <h1>Welcome to XCride</h1>
-    <img src='images/logo.png' alt='Logo'>
-  
-    <div id="comments">
-      <h2>Comments</h2>
-      <ul id="comment-list"></ul>
-      <form id="comment-form">
-        <input type="text" id="name" placeholder="Name" required>
-        <textarea id="comment" placeholder="Your comment" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  
-    <div id="social-sharing">
-      <button class="facebook-share">Share on Facebook</button>
-      <button class="twitter-share">Share on Twitter</button>
-    </div>
-  
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#cycling">Radsport</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Willkommen</h1>
+            <p>Herzlich willkommen auf meiner Webseite!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Über mich</h2>
+            <p>Hier kannst du etwas über mich erfahren.</p>
+        </div>
+    </section>
+
+    <section id="cycling">
+        <div class="container">
+            <h2>Radsport</h2>
+            <p>Hier präsentiere ich meine Radrennen und Erfolge.</p>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Bild 1">
+                <img src="image2.jpg" alt="Bild 2">
+                <img src="image3.jpg" alt="Bild 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Du kannst mich über folgende Kontaktdaten erreichen.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kathrins Cycling Webseite</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
